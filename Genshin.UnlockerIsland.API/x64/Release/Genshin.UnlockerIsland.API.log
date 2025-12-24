@@ -1,0 +1,554 @@
+﻿生成启动时间为 2025/12/24 23:23:16。
+开始生成时的环境:
+MSBuildLoadMicrosoftTargetsReadOnly = true
+
+日志记录详细程度设置为: Diagnostic。23:23:16.946     1>项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”在节点 2 上(Build 个目标)。
+23:23:16.946     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“_CheckForInvalidConfigurationAndPlatform: (目标 ID: 2)”(目标“SetTelemetryEnvironmentVariables”依赖于它):
+23:23:16.947     1>任务“Message” (任务 ID: 2)
+                   已完成执行任务“Message”的操作。 (任务 ID: 2)
+                   任务“Message” (任务 ID: 3)
+                   已完成执行任务“Message”的操作。 (任务 ID: 3)
+23:23:16.947     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_CheckForInvalidConfigurationAndPlatform”的操作。: (目标 ID: 2)
+23:23:16.947     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v180\Microsoft.Cpp.DesignTime.targets”中的目标“SetTelemetryEnvironmentVariables: (目标 ID: 3)”(目标“Build”依赖于它):
+                   任务“SetEnv” (任务 ID: 4)
+                   已完成执行任务“SetEnv”的操作。 (任务 ID: 4)
+                   任务“SetEnv” (任务 ID: 5)
+                   已完成执行任务“SetEnv”的操作。 (任务 ID: 5)
+                   任务“SetEnv” (任务 ID: 6)
+                   已完成执行任务“SetEnv”的操作。 (任务 ID: 6)
+                   任务“SetEnv” (任务 ID: 7)
+                   已完成执行任务“SetEnv”的操作。 (任务 ID: 7)
+                   任务“SetEnv” (任务 ID: 8)
+                   已完成执行任务“SetEnv”的操作。 (任务 ID: 8)
+23:23:16.948     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“SetTelemetryEnvironmentVariables”的操作。: (目标 ID: 3)
+23:23:16.948     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets”中的目标“_PrepareForBuild: (目标 ID: 4)”(目标“Build”依赖于它):
+23:23:16.949     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_PrepareForBuild”的操作。: (目标 ID: 4)
+23:23:16.949     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_PrepareForReferenceResolution: (目标 ID: 5)”(目标“ResolveReferences”依赖于它):
+23:23:16.949     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_PrepareForReferenceResolution”的操作。: (目标 ID: 5)
+23:23:16.949     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“BeforeResolveReferences: (目标 ID: 6)”(目标“ResolveReferences”依赖于它):
+23:23:16.949     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“BeforeResolveReferences”的操作。: (目标 ID: 6)
+23:23:16.949     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“IgnoreJavaScriptOutputAssembly: (目标 ID: 7)”(目标“AssignProjectConfiguration”依赖于它):
+23:23:16.949     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“IgnoreJavaScriptOutputAssembly”的操作。: (目标 ID: 7)
+23:23:16.949     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“AssignProjectConfiguration: (目标 ID: 8)”(目标“ResolveReferences”依赖于它):
+                   任务“AssignProjectConfiguration” (任务 ID: 9)
+                   已完成执行任务“AssignProjectConfiguration”的操作。 (任务 ID: 9)
+23:23:16.950     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“AssignProjectConfiguration”的操作。: (目标 ID: 8)
+23:23:16.950     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“_SplitProjectReferencesByFileExistence: (目标 ID: 9)”(目标“PrepareProjectReferences”依赖于它):
+23:23:16.950     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_SplitProjectReferencesByFileExistence”的操作。: (目标 ID: 9)
+23:23:16.950     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“_AddOutputPathToGlobalPropertiesToRemove: (目标 ID: 10)”(目标“_GetProjectReferenceTargetFrameworkProperties”依赖于它):
+23:23:16.950     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_AddOutputPathToGlobalPropertiesToRemove”的操作。: (目标 ID: 10)
+23:23:16.950     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“_GetProjectReferenceTargetFrameworkProperties: (目标 ID: 11)”(目标“PrepareProjectReferences”依赖于它):
+                   任务“MSBuild” (任务 ID: 10)
+                   已完成执行任务“MSBuild”的操作。 (任务 ID: 10)
+                   任务“SetRidAgnosticValueForProjects” (任务 ID: 11)
+                   已完成执行任务“SetRidAgnosticValueForProjects”的操作。 (任务 ID: 11)
+23:23:16.951     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_GetProjectReferenceTargetFrameworkProperties”的操作。: (目标 ID: 11)
+23:23:16.951     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“PrepareProjectReferences: (目标 ID: 12)”(目标“ResolveProjectReferences”依赖于它):
+23:23:16.951     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“PrepareProjectReferences”的操作。: (目标 ID: 12)
+23:23:16.951     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“ResolveProjectReferences: (目标 ID: 13)”(目标“ResolveReferences”依赖于它):
+23:23:16.951     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ResolveProjectReferences”的操作。: (目标 ID: 13)
+23:23:16.951     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“GetFrameworkPaths: (目标 ID: 14)”(目标“ResolveAssemblyReferences”依赖于它):
+23:23:16.951     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“GetFrameworkPaths”的操作。: (目标 ID: 14)
+23:23:16.951     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“GetReferenceAssemblyPaths: (目标 ID: 15)”(目标“ResolveAssemblyReferences”依赖于它):
+23:23:16.952     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“GetReferenceAssemblyPaths”的操作。: (目标 ID: 15)
+23:23:16.952     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets”中的目标“AddExternalIncludDirectoriesToPaths: (目标 ID: 16)”(目标“SetBuildDefaultEnvironmentVariables”依赖于它):
+23:23:16.952     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“AddExternalIncludDirectoriesToPaths”的操作。: (目标 ID: 16)
+23:23:16.952     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets”中的目标“SetBuildDefaultEnvironmentVariables: (目标 ID: 17)”(目标“PrepareForBuild”依赖于它):
+                   任务“SetEnv” (任务 ID: 12)
+                   已完成执行任务“SetEnv”的操作。 (任务 ID: 12)
+                   任务“SetEnv” (任务 ID: 13)
+                   已完成执行任务“SetEnv”的操作。 (任务 ID: 13)
+                   任务“SetEnv” (任务 ID: 14)
+                   已完成执行任务“SetEnv”的操作。 (任务 ID: 14)
+                   任务“SetEnv” (任务 ID: 15)
+                   已完成执行任务“SetEnv”的操作。 (任务 ID: 15)
+                   任务“SetEnv” (任务 ID: 16)
+                   已完成执行任务“SetEnv”的操作。 (任务 ID: 16)
+23:23:16.953     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“SetBuildDefaultEnvironmentVariables”的操作。: (目标 ID: 17)
+23:23:16.953     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“GetResolvedWinMD: (目标 ID: 18)”(目标“PrepareForBuild”依赖于它):
+23:23:16.953     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“GetResolvedWinMD”的操作。: (目标 ID: 18)
+23:23:16.953     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.targets”中的目标“_CheckWindowsSDKInstalled: (目标 ID: 19)”(目标“PrepareForBuild”依赖于它):
+23:23:16.953     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_CheckWindowsSDKInstalled”的操作。: (目标 ID: 19)
+23:23:16.953     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VisualStudio\v18.0\CodeAnalysis\Microsoft.CodeAnalysis.targets”中的目标“SetCABuildNativeEnvironmentVariables: (目标 ID: 20)”(目标“PrepareForBuild”依赖于它):
+                   任务“SetEnv” (任务 ID: 17)
+                   已完成执行任务“SetEnv”的操作。 (任务 ID: 17)
+23:23:16.953     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“SetCABuildNativeEnvironmentVariables”的操作。: (目标 ID: 20)
+23:23:16.954     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“PrepareForBuild: (目标 ID: 21)”(目标“ResolveAssemblyReferences”依赖于它):
+                   任务“MakeDir” (任务 ID: 18)
+                   已完成执行任务“MakeDir”的操作。 (任务 ID: 18)
+                   任务“CheckVCToolsetVersion” (任务 ID: 19)
+                   已完成执行任务“CheckVCToolsetVersion”的操作。 (任务 ID: 19)
+                   任务“VCMessage” (任务 ID: 20)
+                   已完成执行任务“VCMessage”的操作。 (任务 ID: 20)
+                   任务“MakeDir” (任务 ID: 21)
+                   已完成执行任务“MakeDir”的操作。 (任务 ID: 21)
+23:23:16.960     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“PrepareForBuild”的操作。: (目标 ID: 21)
+23:23:16.960     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“ResolveSDKReferences: (目标 ID: 22)”(目标“ResolveAssemblyReferences”依赖于它):
+23:23:16.960     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ResolveSDKReferences”的操作。: (目标 ID: 22)
+23:23:16.960     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“ExpandSDKReferences: (目标 ID: 23)”(目标“ResolveAssemblyReferences”依赖于它):
+23:23:16.960     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ExpandSDKReferences”的操作。: (目标 ID: 23)
+23:23:16.961     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“ResolveAssemblyReferences: (目标 ID: 24)”(目标“ResolveReferences”依赖于它):
+23:23:16.961     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ResolveAssemblyReferences”的操作。: (目标 ID: 24)
+23:23:16.961     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“AfterResolveReferences: (目标 ID: 25)”(目标“ResolveReferences”依赖于它):
+23:23:16.961     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“AfterResolveReferences”的操作。: (目标 ID: 25)
+23:23:16.961     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“ResolveReferences: (目标 ID: 26)”(目标“Build”依赖于它):
+23:23:16.961     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ResolveReferences”的操作。: (目标 ID: 26)
+23:23:16.961     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“InitializeBuildStatus: (目标 ID: 27)”(目标“Build”依赖于它):
+                   任务“ReadLinesFromFile” (任务 ID: 22)
+                   已完成执行任务“ReadLinesFromFile”的操作。 (任务 ID: 22)
+                   任务“WriteLinesToFile” (任务 ID: 23)
+                   已完成执行任务“WriteLinesToFile”的操作。 (任务 ID: 23)
+                   任务“Touch” (任务 ID: 24)
+                   已完成执行任务“Touch”的操作。 (任务 ID: 24)
+23:23:16.965     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“InitializeBuildStatus”的操作。: (目标 ID: 27)
+23:23:16.965     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“BuildGenerateSourcesTraverse: (目标 ID: 28)”(目标“BuildGenerateSources”依赖于它):
+23:23:16.965     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“BuildGenerateSourcesTraverse”的操作。: (目标 ID: 28)
+23:23:16.965     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets”中的目标“BeforeBuildGenerateSources: (目标 ID: 29)”(目标“_BuildGenerateSourcesAction”依赖于它):
+23:23:16.965     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“BeforeBuildGenerateSources”的操作。: (目标 ID: 29)
+23:23:16.965     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“PreBuildEvent: (目标 ID: 30)”(目标“_BuildGenerateSourcesAction”依赖于它):
+23:23:16.965     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“PreBuildEvent”的操作。: (目标 ID: 30)
+23:23:16.965     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_SelectedFiles: (目标 ID: 31)”(目标“SelectCustomBuild”依赖于它):
+23:23:16.965     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_SelectedFiles”的操作。: (目标 ID: 31)
+23:23:16.965     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“SelectCustomBuild: (目标 ID: 32)”(目标“CustomBuild”依赖于它):
+23:23:16.965     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“SelectCustomBuild”的操作。: (目标 ID: 32)
+23:23:16.965     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeCustomBuildOutput: (目标 ID: 33)”(目标“CustomBuild”依赖于它):
+                   任务“MakeDir” (任务 ID: 25)
+                   已完成执行任务“MakeDir”的操作。 (任务 ID: 25)
+23:23:16.965     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeCustomBuildOutput”的操作。: (目标 ID: 33)
+23:23:16.965     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“CustomBuild: (目标 ID: 34)”(目标“_BuildGenerateSourcesAction”依赖于它):
+                   任务“GetOutOfDateItems” (任务 ID: 26)
+                   已完成执行任务“GetOutOfDateItems”的操作。 (任务 ID: 26)
+                   任务“GetOutOfDateItems” (任务 ID: 27)
+                   已完成执行任务“GetOutOfDateItems”的操作。 (任务 ID: 27)
+23:23:16.968     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“CustomBuild”的操作。: (目标 ID: 34)
+23:23:16.968     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“CopyFileToFolders: (目标 ID: 35)”(目标“_BuildGenerateSourcesAction”依赖于它):
+                   任务“GetOutOfDateItems” (任务 ID: 28)
+                   已完成执行任务“GetOutOfDateItems”的操作。 (任务 ID: 28)
+23:23:16.969     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“CopyFileToFolders”的操作。: (目标 ID: 35)
+23:23:16.969     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_Xsd: (目标 ID: 36)”(目标“_BuildGenerateSourcesAction”依赖于它):
+23:23:16.969     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_Xsd”的操作。: (目标 ID: 36)
+23:23:16.969     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“MakeDirsForMidl: (目标 ID: 37)”(目标“_Midl”依赖于它):
+                   任务“Makedir” (任务 ID: 29)
+                   已完成执行任务“Makedir”的操作。 (任务 ID: 29)
+23:23:16.969     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“MakeDirsForMidl”的操作。: (目标 ID: 37)
+23:23:16.969     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeMIDLGeneratedCompileInputs: (目标 ID: 38)”(目标“_Midl”依赖于它):
+23:23:16.969     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeMIDLGeneratedCompileInputs”的操作。: (目标 ID: 38)
+23:23:16.969     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“AfterMidl: (目标 ID: 39)”(目标“_Midl”依赖于它):
+23:23:16.969     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“AfterMidl”的操作。: (目标 ID: 39)
+23:23:16.969     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_Midl: (目标 ID: 40)”(目标“_BuildGenerateSourcesAction”依赖于它):
+23:23:16.969     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_Midl”的操作。: (目标 ID: 40)
+23:23:16.969     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets”中的目标“AfterBuildGenerateSources: (目标 ID: 41)”(目标“_BuildGenerateSourcesAction”依赖于它):
+23:23:16.969     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“AfterBuildGenerateSources”的操作。: (目标 ID: 41)
+23:23:16.969     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“AfterBuildGenerateSourcesEvent: (目标 ID: 42)”(目标“_BuildGenerateSourcesAction”依赖于它):
+23:23:16.969     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“AfterBuildGenerateSourcesEvent”的操作。: (目标 ID: 42)
+23:23:16.969     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_BuildGenerateSourcesAction: (目标 ID: 43)”(目标“BuildGenerateSources”依赖于它):
+23:23:16.969     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_BuildGenerateSourcesAction”的操作。: (目标 ID: 43)
+23:23:16.969     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“BuildGenerateSources: (目标 ID: 44)”(目标“Build”依赖于它):
+23:23:16.969     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“BuildGenerateSources”的操作。: (目标 ID: 44)
+23:23:16.970     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“BuildCompileTraverse: (目标 ID: 45)”(目标“BuildCompile”依赖于它):
+23:23:16.970     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“BuildCompileTraverse”的操作。: (目标 ID: 45)
+23:23:16.970     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“BeforeClCompile: (目标 ID: 46)”(目标“_ClCompile”依赖于它):
+23:23:16.970     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“BeforeClCompile”的操作。: (目标 ID: 46)
+23:23:16.970     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeCLInputPDBName: (目标 ID: 47)”(目标“_ClCompile”依赖于它):
+23:23:16.970     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeCLInputPDBName”的操作。: (目标 ID: 47)
+23:23:16.970     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“FindReferenceAssembliesForReferences: (目标 ID: 48)”(目标“ComputeReferenceCLInput”依赖于它):
+23:23:16.970     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“FindReferenceAssembliesForReferences”的操作。: (目标 ID: 48)
+23:23:16.970     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“GetReferencedVCProjectsInfo: (目标 ID: 49)”(目标“ComputeReferenceCLInput”依赖于它):
+23:23:16.970     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“GetReferencedVCProjectsInfo”的操作。: (目标 ID: 49)
+23:23:16.970     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeReferenceCLInput: (目标 ID: 50)”(目标“_ClCompile”依赖于它):
+23:23:16.971     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeReferenceCLInput”的操作。: (目标 ID: 50)
+23:23:16.971     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“WarnCompileDuplicatedFilename: (目标 ID: 51)”(目标“_ClCompile”依赖于它):
+23:23:16.971     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“WarnCompileDuplicatedFilename”的操作。: (目标 ID: 51)
+23:23:16.971     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“SetCppLanguageStandardCapabilities: (目标 ID: 52)”(目标“ComputeStdModulesCompileInputs”依赖于它):
+23:23:16.971     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“SetCppLanguageStandardCapabilities”的操作。: (目标 ID: 52)
+23:23:16.971     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“ComputeStdModulesCompileInputs: (目标 ID: 53)”(目标“_ClCompile”依赖于它):
+23:23:16.972     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeStdModulesCompileInputs”的操作。: (目标 ID: 53)
+23:23:16.972     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“FixupCLCompileOptions: (目标 ID: 54)”(目标“_ClCompile”依赖于它):
+23:23:16.974     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“FixupCLCompileOptions”的操作。: (目标 ID: 54)
+23:23:16.974     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“MakeDirsForCl: (目标 ID: 55)”(目标“_ClCompile”依赖于它):
+                   任务“MakeDir” (任务 ID: 30)
+                   已完成执行任务“MakeDir”的操作。 (任务 ID: 30)
+23:23:16.975     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“MakeDirsForCl”的操作。: (目标 ID: 55)
+23:23:16.975     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“SelectClCompile: (目标 ID: 56)”(目标“ClCompile”依赖于它):
+23:23:16.975     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“SelectClCompile”的操作。: (目标 ID: 56)
+23:23:16.975     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“ClCompile: (目标 ID: 57)”(目标“_ClCompile”依赖于它):
+                   任务“CL” (任务 ID: 31)
+                   已完成执行任务“CL”的操作。 (任务 ID: 31)
+                   任务“CL” (任务 ID: 32)
+                     C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl /O2 /Oi /GL /D NDEBUG /D GENSHINFPSUNLOCKERISLAND_EXPORTS /D _WINDOWS /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++20 /permissive- /Fo"x64\Release\\" /Fd"x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt RuntimeControl.cpp dllmain.cpp (任务 ID: 32)
+                     RuntimeControl.cpp (任务 ID: 32)
+                     dllmain.cpp (任务 ID: 32)
+                   已完成执行任务“CL”的操作。 (任务 ID: 32)
+23:23:24.201     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ClCompile”的操作。: (目标 ID: 57)
+23:23:24.201     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“AfterClCompile: (目标 ID: 58)”(目标“_ClCompile”依赖于它):
+23:23:24.201     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“AfterClCompile”的操作。: (目标 ID: 58)
+23:23:24.201     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_ClCompile: (目标 ID: 59)”(目标“_BuildCompileAction”依赖于它):
+23:23:24.201     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_ClCompile”的操作。: (目标 ID: 59)
+23:23:24.201     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“BeforeResourceCompile: (目标 ID: 60)”(目标“_ResourceCompile”依赖于它):
+23:23:24.201     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“BeforeResourceCompile”的操作。: (目标 ID: 60)
+23:23:24.201     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“MakeDirsForResourceCompile: (目标 ID: 61)”(目标“_ResourceCompile”依赖于它):
+                   任务“MakeDir” (任务 ID: 33)
+                   已完成执行任务“MakeDir”的操作。 (任务 ID: 33)
+23:23:24.201     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“MakeDirsForResourceCompile”的操作。: (目标 ID: 61)
+23:23:24.201     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“AfterResourceCompile: (目标 ID: 62)”(目标“_ResourceCompile”依赖于它):
+23:23:24.201     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“AfterResourceCompile”的操作。: (目标 ID: 62)
+23:23:24.201     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_ResourceCompile: (目标 ID: 63)”(目标“_BuildCompileAction”依赖于它):
+23:23:24.201     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_ResourceCompile”的操作。: (目标 ID: 63)
+23:23:24.201     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“AfterBuildCompileEvent: (目标 ID: 64)”(目标“_BuildCompileAction”依赖于它):
+23:23:24.201     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“AfterBuildCompileEvent”的操作。: (目标 ID: 64)
+23:23:24.201     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_BuildCompileAction: (目标 ID: 65)”(目标“BuildCompile”依赖于它):
+23:23:24.201     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_BuildCompileAction”的操作。: (目标 ID: 65)
+23:23:24.201     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“BuildCompile: (目标 ID: 66)”(目标“Build”依赖于它):
+23:23:24.201     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“BuildCompile”的操作。: (目标 ID: 66)
+23:23:24.202     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“BuildLinkTraverse: (目标 ID: 67)”(目标“BuildLink”依赖于它):
+23:23:24.202     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“BuildLinkTraverse”的操作。: (目标 ID: 67)
+23:23:24.202     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeLegacyManifestEmbedding: (目标 ID: 68)”(目标“_BuildLinkAction”依赖于它):
+23:23:24.202     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeLegacyManifestEmbedding”的操作。: (目标 ID: 68)
+23:23:24.202     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“BeforeLink: (目标 ID: 69)”(目标“_Link”依赖于它):
+23:23:24.202     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“BeforeLink”的操作。: (目标 ID: 69)
+23:23:24.202     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeRCOutputs: (目标 ID: 70)”(目标“ComputeRCGeneratedLinkInputs”依赖于它):
+23:23:24.202     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeRCOutputs”的操作。: (目标 ID: 70)
+23:23:24.202     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeRCGeneratedLinkInputs: (目标 ID: 71)”(目标“_Link”依赖于它):
+23:23:24.202     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeRCGeneratedLinkInputs”的操作。: (目标 ID: 71)
+23:23:24.202     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeManifestGeneratedLinkerInputs: (目标 ID: 72)”(目标“_Link”依赖于它):
+23:23:24.202     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeManifestGeneratedLinkerInputs”的操作。: (目标 ID: 72)
+23:23:24.202     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeCLOutputs: (目标 ID: 73)”(目标“ComputeCLGeneratedLinkInputs”依赖于它):
+23:23:24.202     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeCLOutputs”的操作。: (目标 ID: 73)
+23:23:24.202     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeCLGeneratedLinkInputs: (目标 ID: 74)”(目标“_Link”依赖于它):
+23:23:24.202     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeCLGeneratedLinkInputs”的操作。: (目标 ID: 74)
+23:23:24.202     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeLinkInputsFromProject: (目标 ID: 75)”(目标“_Link”依赖于它):
+23:23:24.203     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeLinkInputsFromProject”的操作。: (目标 ID: 75)
+23:23:24.203     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeManifestInputsTargets: (目标 ID: 76)”(目标“_Link”依赖于它):
+23:23:24.203     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeManifestInputsTargets”的操作。: (目标 ID: 76)
+23:23:24.203     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“AssignTargetPaths: (目标 ID: 77)”(目标“PrepareResourceNames”依赖于它):
+                   任务“AssignTargetPath” (任务 ID: 34)
+                   已完成执行任务“AssignTargetPath”的操作。 (任务 ID: 34)
+                   任务“AssignTargetPath” (任务 ID: 35)
+                   已完成执行任务“AssignTargetPath”的操作。 (任务 ID: 35)
+                   任务“AssignTargetPath” (任务 ID: 36)
+                   已完成执行任务“AssignTargetPath”的操作。 (任务 ID: 36)
+                   任务“AssignTargetPath” (任务 ID: 37)
+                   已完成执行任务“AssignTargetPath”的操作。 (任务 ID: 37)
+23:23:24.204     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“AssignTargetPaths”的操作。: (目标 ID: 77)
+23:23:24.204     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“SplitResourcesByCulture: (目标 ID: 78)”(目标“PrepareResourceNames”依赖于它):
+                   任务“AssignCulture” (任务 ID: 38)
+                   已完成执行任务“AssignCulture”的操作。 (任务 ID: 38)
+23:23:24.204     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“SplitResourcesByCulture”的操作。: (目标 ID: 78)
+23:23:24.205     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“CreateCustomManifestResourceNames: (目标 ID: 79)”(目标“PrepareResourceNames”依赖于它):
+23:23:24.205     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“CreateCustomManifestResourceNames”的操作。: (目标 ID: 79)
+23:23:24.205     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“PrepareResourceNames: (目标 ID: 80)”(目标“_Link”依赖于它):
+23:23:24.205     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“PrepareResourceNames”的操作。: (目标 ID: 80)
+23:23:24.205     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“MakeDirsForLink: (目标 ID: 81)”(目标“_Link”依赖于它):
+                   任务“MakeDir” (任务 ID: 39)
+                   已完成执行任务“MakeDir”的操作。 (任务 ID: 39)
+23:23:24.205     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“MakeDirsForLink”的操作。: (目标 ID: 81)
+23:23:24.205     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“DoLinkOutputFilesMatch: (目标 ID: 82)”(目标“_Link”依赖于它):
+23:23:24.205     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“DoLinkOutputFilesMatch”的操作。: (目标 ID: 82)
+23:23:24.205     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“PreLinkEvent: (目标 ID: 83)”(目标“_Link”依赖于它):
+23:23:24.205     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“PreLinkEvent”的操作。: (目标 ID: 83)
+23:23:24.206     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“ComputeLinkSwitches: (目标 ID: 84)”(目标“Link”依赖于它):
+23:23:24.206     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeLinkSwitches”的操作。: (目标 ID: 84)
+23:23:24.206     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“Link: (目标 ID: 85)”(目标“_Link”依赖于它):
+                   任务“Link” (任务 ID: 40)
+                     C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Desktop\CN\x64\Release\Genshin.Fps.UnlockerIsland.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:NO /manifest:embed /PDB:"C:\Users\Administrator\Desktop\CN\x64\Release\Genshin.Fps.UnlockerIsland.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG:incremental /LTCGOUT:"x64\Release\Genshin.Fps.UnlockerIsland.iobj" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator\Desktop\CN\x64\Release\Genshin.Fps.UnlockerIsland.lib" /MACHINE:X64 /DLL x64\Release\dllmain.obj
+                     x64\Release\pch.obj
+                     x64\Release\RuntimeControl.obj (任务 ID: 40)
+23:23:24.393     1>LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+                     正在生成代码 (任务 ID: 40)
+                     7 of 422 functions ( 1.7%) were compiled, the rest were copied from previous compilation. (任务 ID: 40)
+                       0 functions were new in current compilation (任务 ID: 40)
+                       1 functions had inline decision re-evaluated but remain unchanged (任务 ID: 40)
+                     已完成代码的生成 (任务 ID: 40)
+                   已完成执行任务“Link”的操作。 (任务 ID: 40)
+                   任务“Message” (任务 ID: 41)
+                     Genshin.UnlockerIsland.API.vcxproj -> C:\Users\Administrator\Desktop\CN\x64\Release\Genshin.Fps.UnlockerIsland.dll (任务 ID: 41)
+                   已完成执行任务“Message”的操作。 (任务 ID: 41)
+23:23:24.865     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“Link”的操作。: (目标 ID: 85)
+23:23:24.865     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“AfterLink: (目标 ID: 86)”(目标“_Link”依赖于它):
+23:23:24.865     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“AfterLink”的操作。: (目标 ID: 86)
+23:23:24.865     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_Link: (目标 ID: 87)”(目标“_BuildLinkAction”依赖于它):
+23:23:24.865     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_Link”的操作。: (目标 ID: 87)
+23:23:24.865     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_ALink: (目标 ID: 88)”(目标“_BuildLinkAction”依赖于它):
+23:23:24.865     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_ALink”的操作。: (目标 ID: 88)
+23:23:24.865     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_Manifest: (目标 ID: 89)”(目标“_BuildLinkAction”依赖于它):
+23:23:24.865     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_Manifest”的操作。: (目标 ID: 89)
+23:23:24.865     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“RegisterOutput: (目标 ID: 90)”(目标“_BuildLinkAction”依赖于它):
+23:23:24.865     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“RegisterOutput”的操作。: (目标 ID: 90)
+23:23:24.865     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ResolvedXDCMake: (目标 ID: 91)”(目标“_XdcMake”依赖于它):
+23:23:24.865     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ResolvedXDCMake”的操作。: (目标 ID: 91)
+23:23:24.865     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeCLCompileGeneratedXDCFiles: (目标 ID: 92)”(目标“_XdcMake”依赖于它):
+23:23:24.865     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeCLCompileGeneratedXDCFiles”的操作。: (目标 ID: 92)
+23:23:24.865     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“MakeDirsForXdcMake: (目标 ID: 93)”(目标“_XdcMake”依赖于它):
+                   任务“MakeDir” (任务 ID: 42)
+                   已完成执行任务“MakeDir”的操作。 (任务 ID: 42)
+23:23:24.866     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“MakeDirsForXdcMake”的操作。: (目标 ID: 93)
+23:23:24.866     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_XdcMake: (目标 ID: 94)”(目标“_BuildLinkAction”依赖于它):
+23:23:24.866     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_XdcMake”的操作。: (目标 ID: 94)
+23:23:24.866     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ComputeCLCompileGeneratedSbrFiles: (目标 ID: 95)”(目标“_BscMake”依赖于它):
+23:23:24.866     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ComputeCLCompileGeneratedSbrFiles”的操作。: (目标 ID: 95)
+23:23:24.866     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“MakeDirsForBscMake: (目标 ID: 96)”(目标“_BscMake”依赖于它):
+                   任务“MakeDir” (任务 ID: 43)
+                   已完成执行任务“MakeDir”的操作。 (任务 ID: 43)
+23:23:24.866     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“MakeDirsForBscMake”的操作。: (目标 ID: 96)
+23:23:24.866     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_BscMake: (目标 ID: 97)”(目标“_BuildLinkAction”依赖于它):
+23:23:24.866     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_BscMake”的操作。: (目标 ID: 97)
+23:23:24.866     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“BuiltProjectOutputGroup: (目标 ID: 98)”(目标“CreateRecipeFile”依赖于它):
+23:23:24.866     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“BuiltProjectOutputGroup”的操作。: (目标 ID: 98)
+23:23:24.866     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“SatelliteDllsProjectOutputGroup: (目标 ID: 99)”(目标“CreateRecipeFile”依赖于它):
+23:23:24.866     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“SatelliteDllsProjectOutputGroup”的操作。: (目标 ID: 99)
+23:23:24.866     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“MakeDirsForFxc: (目标 ID: 100)”(目标“ContentFilesProjectOutputGroup”依赖于它):
+                   任务“MakeDir” (任务 ID: 44)
+                   已完成执行任务“MakeDir”的操作。 (任务 ID: 44)
+23:23:24.866     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“MakeDirsForFxc”的操作。: (目标 ID: 100)
+23:23:24.866     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“ContentFilesProjectOutputGroup: (目标 ID: 101)”(目标“CreateRecipeFile”依赖于它):
+23:23:24.867     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“ContentFilesProjectOutputGroup”的操作。: (目标 ID: 101)
+23:23:24.867     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“CreateRecipeFile: (目标 ID: 102)”(目标“_BuildLinkAction”依赖于它):
+                   任务“GenerateDesktopDeployRecipe” (任务 ID: 45)
+                   已完成执行任务“GenerateDesktopDeployRecipe”的操作。 (任务 ID: 45)
+23:23:24.868     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“CreateRecipeFile”的操作。: (目标 ID: 102)
+23:23:24.868     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“_GenerateSatelliteAssemblyInputs: (目标 ID: 103)”(目标“CreateSatelliteAssemblies”依赖于它):
+23:23:24.869     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_GenerateSatelliteAssemblyInputs”的操作。: (目标 ID: 103)
+23:23:24.869     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“CreateSatelliteAssemblies: (目标 ID: 104)”(目标“_BuildLinkAction”依赖于它):
+23:23:24.869     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“CreateSatelliteAssemblies”的操作。: (目标 ID: 104)
+23:23:24.869     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_Appverifier: (目标 ID: 105)”(目标“_BuildLinkAction”依赖于它):
+23:23:24.869     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_Appverifier”的操作。: (目标 ID: 105)
+23:23:24.869     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_Deploy: (目标 ID: 106)”(目标“_BuildLinkAction”依赖于它):
+23:23:24.869     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_Deploy”的操作。: (目标 ID: 106)
+23:23:24.869     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“_PopulateCommonStateForGetCopyToOutputDirectoryItems: (目标 ID: 107)”(目标“GetCopyToOutputDirectoryItems”依赖于它):
+23:23:24.869     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_PopulateCommonStateForGetCopyToOutputDirectoryItems”的操作。: (目标 ID: 107)
+23:23:24.869     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets”中的目标“GetCopyToOutputDirectoryXamlAppDefs: (目标 ID: 108)”(目标“GetCopyToOutputDirectoryItems”依赖于它):
+                   任务“AssignTargetPath” (任务 ID: 46)
+                   已完成执行任务“AssignTargetPath”的操作。 (任务 ID: 46)
+23:23:24.869     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“GetCopyToOutputDirectoryXamlAppDefs”的操作。: (目标 ID: 108)
+23:23:24.869     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“GetCopyToOutputDirectoryItems: (目标 ID: 109)”(目标“_CopySourceItemsToOutputDirectory”依赖于它):
+                   任务“CallTarget” (任务 ID: 47)
+23:23:24.870     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences: (目标 ID: 110)”(目标“GetCopyToOutputDirectoryItems”依赖于它):
+                   任务“AssignTargetPath” (任务 ID: 48)
+                   已完成执行任务“AssignTargetPath”的操作。 (任务 ID: 48)
+23:23:24.870     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences”的操作。: (目标 ID: 110)
+                   已完成执行任务“CallTarget”的操作。 (任务 ID: 47)
+                   任务“CallTarget” (任务 ID: 49)
+23:23:24.870     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“_GetCopyToOutputDirectoryItemsFromThisProject: (目标 ID: 111)”(目标“GetCopyToOutputDirectoryItems”依赖于它):
+                   任务“AssignTargetPath” (任务 ID: 50)
+                   已完成执行任务“AssignTargetPath”的操作。 (任务 ID: 50)
+23:23:24.870     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_GetCopyToOutputDirectoryItemsFromThisProject”的操作。: (目标 ID: 111)
+                   已完成执行任务“CallTarget”的操作。 (任务 ID: 49)
+23:23:24.871     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“GetCopyToOutputDirectoryItems”的操作。: (目标 ID: 109)
+23:23:24.871     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“_CopySourceItemsToOutputDirectory: (目标 ID: 112)”(目标“CopyFilesToOutputDirectory”依赖于它):
+23:23:24.871     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_CopySourceItemsToOutputDirectory”的操作。: (目标 ID: 112)
+23:23:24.871     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“_CheckForCompileOutputs: (目标 ID: 113)”(目标“CopyFilesToOutputDirectory”依赖于它):
+23:23:24.871     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_CheckForCompileOutputs”的操作。: (目标 ID: 113)
+23:23:24.871     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“CopyFilesToOutputDirectory: (目标 ID: 114)”(目标“PrepareForRun”依赖于它):
+23:23:24.871     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“CopyFilesToOutputDirectory”的操作。: (目标 ID: 114)
+23:23:24.871     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“PrepareForRun: (目标 ID: 115)”(目标“_BuildLinkAction”依赖于它):
+23:23:24.871     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“PrepareForRun”的操作。: (目标 ID: 115)
+23:23:24.871     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“PostBuildEvent: (目标 ID: 116)”(目标“_BuildLinkAction”依赖于它):
+23:23:24.871     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“PostBuildEvent”的操作。: (目标 ID: 116)
+23:23:24.871     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“_BuildLinkAction: (目标 ID: 117)”(目标“BuildLink”依赖于它):
+23:23:24.871     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_BuildLinkAction”的操作。: (目标 ID: 117)
+23:23:24.871     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“BuildLink: (目标 ID: 118)”(目标“Build”依赖于它):
+23:23:24.871     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“BuildLink”的操作。: (目标 ID: 118)
+23:23:24.871     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets”中的目标“AfterBuild: (目标 ID: 119)”(目标“Build”依赖于它):
+23:23:24.871     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“AfterBuild”的操作。: (目标 ID: 119)
+23:23:24.871     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“_CleanGetCurrentAndPriorFileWrites: (目标 ID: 120)”(目标“IncrementalClean”依赖于它):
+                   任务“ReadLinesFromFile” (任务 ID: 51)
+                   已完成执行任务“ReadLinesFromFile”的操作。 (任务 ID: 51)
+                   任务“ConvertToAbsolutePath” (任务 ID: 52)
+                   已完成执行任务“ConvertToAbsolutePath”的操作。 (任务 ID: 52)
+                   任务“FindUnderPath” (任务 ID: 53)
+                   已完成执行任务“FindUnderPath”的操作。 (任务 ID: 53)
+                   任务“FindUnderPath” (任务 ID: 54)
+                   已完成执行任务“FindUnderPath”的操作。 (任务 ID: 54)
+                   任务“FindUnderPath” (任务 ID: 55)
+                   已完成执行任务“FindUnderPath”的操作。 (任务 ID: 55)
+                   任务“RemoveDuplicates” (任务 ID: 56)
+                   已完成执行任务“RemoveDuplicates”的操作。 (任务 ID: 56)
+23:23:24.873     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“_CleanGetCurrentAndPriorFileWrites”的操作。: (目标 ID: 120)
+23:23:24.873     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“IncrementalClean: (目标 ID: 121)”(目标“Build”依赖于它):
+                   任务“FindUnderPath” (任务 ID: 57)
+                   已完成执行任务“FindUnderPath”的操作。 (任务 ID: 57)
+                   任务“FindUnderPath” (任务 ID: 58)
+                   已完成执行任务“FindUnderPath”的操作。 (任务 ID: 58)
+                   任务“Delete” (任务 ID: 59)
+                   已完成执行任务“Delete”的操作。 (任务 ID: 59)
+                   任务“RemoveDuplicates” (任务 ID: 60)
+                   已完成执行任务“RemoveDuplicates”的操作。 (任务 ID: 60)
+23:23:24.874     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“IncrementalClean”的操作。: (目标 ID: 121)
+23:23:24.874     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“TlogCleanup: (目标 ID: 122)”(目标“Build”依赖于它):
+                   任务“CleanupStaleTlogItems” (任务 ID: 61)
+                   已完成执行任务“CleanupStaleTlogItems”的操作。 (任务 ID: 61)
+23:23:24.875     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“TlogCleanup”的操作。: (目标 ID: 122)
+23:23:24.875     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“FinalizeBuildStatus: (目标 ID: 123)”(目标“Build”依赖于它):
+                   任务“Delete” (任务 ID: 62)
+                   已完成执行任务“Delete”的操作。 (任务 ID: 62)
+                   任务“Touch” (任务 ID: 63)
+                   已完成执行任务“Touch”的操作。 (任务 ID: 63)
+23:23:24.877     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“FinalizeBuildStatus”的操作。: (目标 ID: 123)
+23:23:24.877     1>来自项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”的文件“C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets”中的目标“Build: (目标 ID: 124)”(入口点):
+23:23:24.877     1>已完成在项目“Genshin.UnlockerIsland.API.vcxproj”中生成目标“Build”的操作。: (目标 ID: 124)
+23:23:24.877     1>已完成生成项目“C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”(Build 个目标)的操作。
+
+项目性能摘要:
+     7931 毫秒 C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj   1 次调用
+               7931 毫秒 Build                                      1 次调用
+
+目标性能摘要:
+        0 毫秒 _ResourceCompile                           1 次调用
+        0 毫秒 AfterLink                                  1 次调用
+        0 毫秒 ComputeLinkSwitches                        1 次调用
+        0 毫秒 PreLinkEvent                               1 次调用
+        0 毫秒 DoLinkOutputFilesMatch                     1 次调用
+        0 毫秒 MakeDirsForLink                            1 次调用
+        0 毫秒 PrepareResourceNames                       1 次调用
+        0 毫秒 CreateCustomManifestResourceNames          1 次调用
+        0 毫秒 SplitResourcesByCulture                    1 次调用
+        0 毫秒 ComputeManifestInputsTargets               1 次调用
+        0 毫秒 ComputeCLGeneratedLinkInputs               1 次调用
+        0 毫秒 ComputeCLOutputs                           1 次调用
+        0 毫秒 ComputeManifestGeneratedLinkerInputs       1 次调用
+        0 毫秒 ComputeRCGeneratedLinkInputs               1 次调用
+        0 毫秒 ComputeRCOutputs                           1 次调用
+        0 毫秒 BeforeLink                                 1 次调用
+        0 毫秒 ComputeLegacyManifestEmbedding             1 次调用
+        0 毫秒 BuildLinkTraverse                          1 次调用
+        0 毫秒 BuildCompile                               1 次调用
+        0 毫秒 _BuildCompileAction                        1 次调用
+        0 毫秒 AfterBuildCompileEvent                     1 次调用
+        0 毫秒 AfterResourceCompile                       1 次调用
+        0 毫秒 MakeDirsForResourceCompile                 1 次调用
+        0 毫秒 BeforeResourceCompile                      1 次调用
+        0 毫秒 _Link                                      1 次调用
+        0 毫秒 _ALink                                     1 次调用
+        0 毫秒 _Manifest                                  1 次调用
+        0 毫秒 RegisterOutput                             1 次调用
+        0 毫秒 AfterBuild                                 1 次调用
+        0 毫秒 BuildLink                                  1 次调用
+        0 毫秒 _BuildLinkAction                           1 次调用
+        0 毫秒 PostBuildEvent                             1 次调用
+        0 毫秒 PrepareForRun                              1 次调用
+        0 毫秒 CopyFilesToOutputDirectory                 1 次调用
+        0 毫秒 _CheckForCompileOutputs                    1 次调用
+        0 毫秒 _CopySourceItemsToOutputDirectory          1 次调用
+        0 毫秒 _GetCopyToOutputDirectoryItemsFromThisProject   1 次调用
+        0 毫秒 _GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences   1 次调用
+        0 毫秒 GetCopyToOutputDirectoryXamlAppDefs        1 次调用
+        0 毫秒 _ClCompile                                 1 次调用
+        0 毫秒 _PopulateCommonStateForGetCopyToOutputDirectoryItems   1 次调用
+        0 毫秒 _Appverifier                               1 次调用
+        0 毫秒 CreateSatelliteAssemblies                  1 次调用
+        0 毫秒 MakeDirsForFxc                             1 次调用
+        0 毫秒 SatelliteDllsProjectOutputGroup            1 次调用
+        0 毫秒 BuiltProjectOutputGroup                    1 次调用
+        0 毫秒 _BscMake                                   1 次调用
+        0 毫秒 MakeDirsForBscMake                         1 次调用
+        0 毫秒 ComputeCLCompileGeneratedSbrFiles          1 次调用
+        0 毫秒 _XdcMake                                   1 次调用
+        0 毫秒 ComputeCLCompileGeneratedXDCFiles          1 次调用
+        0 毫秒 ResolvedXDCMake                            1 次调用
+        0 毫秒 _Deploy                                    1 次调用
+        0 毫秒 AfterClCompile                             1 次调用
+        0 毫秒 Build                                      1 次调用
+        0 毫秒 BeforeBuildGenerateSources                 1 次调用
+        0 毫秒 _Xsd                                       1 次调用
+        0 毫秒 PrepareProjectReferences                   1 次调用
+        0 毫秒 ResolveProjectReferences                   1 次调用
+        0 毫秒 ComputeCustomBuildOutput                   1 次调用
+        0 毫秒 SelectCustomBuild                          1 次调用
+        0 毫秒 GetFrameworkPaths                          1 次调用
+        0 毫秒 _SelectedFiles                             1 次调用
+        0 毫秒 PreBuildEvent                              1 次调用
+        0 毫秒 AddExternalIncludDirectoriesToPaths        1 次调用
+        0 毫秒 BuildGenerateSourcesTraverse               1 次调用
+        0 毫秒 SelectClCompile                            1 次调用
+        0 毫秒 ResolveReferences                          1 次调用
+        0 毫秒 AfterResolveReferences                     1 次调用
+        0 毫秒 ResolveAssemblyReferences                  1 次调用
+        0 毫秒 ExpandSDKReferences                        1 次调用
+        0 毫秒 ResolveSDKReferences                       1 次调用
+        0 毫秒 GetResolvedWinMD                           1 次调用
+        0 毫秒 MakeDirsForMidl                            1 次调用
+        0 毫秒 SetCABuildNativeEnvironmentVariables       1 次调用
+        0 毫秒 ComputeMIDLGeneratedCompileInputs          1 次调用
+        0 毫秒 AfterMidl                                  1 次调用
+        0 毫秒 _PrepareForReferenceResolution             1 次调用
+        0 毫秒 BeforeResolveReferences                    1 次调用
+        0 毫秒 IgnoreJavaScriptOutputAssembly             1 次调用
+        0 毫秒 SetCppLanguageStandardCapabilities         1 次调用
+        0 毫秒 WarnCompileDuplicatedFilename              1 次调用
+        0 毫秒 _SplitProjectReferencesByFileExistence     1 次调用
+        0 毫秒 _AddOutputPathToGlobalPropertiesToRemove   1 次调用
+        0 毫秒 GetReferencedVCProjectsInfo                1 次调用
+        0 毫秒 FindReferenceAssembliesForReferences       1 次调用
+        0 毫秒 BeforeClCompile                            1 次调用
+        0 毫秒 BuildCompileTraverse                       1 次调用
+        0 毫秒 BuildGenerateSources                       1 次调用
+        0 毫秒 _BuildGenerateSourcesAction                1 次调用
+        0 毫秒 AfterBuildGenerateSourcesEvent             1 次调用
+        0 毫秒 AfterBuildGenerateSources                  1 次调用
+        0 毫秒 _Midl                                      1 次调用
+        0 毫秒 ComputeCLInputPDBName                      1 次调用
+        0 毫秒 _CheckWindowsSDKInstalled                  1 次调用
+        1 毫秒 ComputeLinkInputsFromProject               1 次调用
+        1 毫秒 AssignTargetPaths                          1 次调用
+        1 毫秒 MakeDirsForXdcMake                         1 次调用
+        1 毫秒 _CheckForInvalidConfigurationAndPlatform   1 次调用
+        1 毫秒 SetBuildDefaultEnvironmentVariables        1 次调用
+        1 毫秒 SetTelemetryEnvironmentVariables           1 次调用
+        1 毫秒 GetReferenceAssemblyPaths                  1 次调用
+        1 毫秒 TlogCleanup                                1 次调用
+        1 毫秒 ComputeReferenceCLInput                    1 次调用
+        1 毫秒 AssignProjectConfiguration                 1 次调用
+        1 毫秒 _PrepareForBuild                           1 次调用
+        1 毫秒 MakeDirsForCl                              1 次调用
+        1 毫秒 _GenerateSatelliteAssemblyInputs           1 次调用
+        1 毫秒 CreateRecipeFile                           1 次调用
+        1 毫秒 IncrementalClean                           1 次调用
+        1 毫秒 ComputeStdModulesCompileInputs             1 次调用
+        1 毫秒 ContentFilesProjectOutputGroup             1 次调用
+        1 毫秒 CopyFileToFolders                          1 次调用
+        1 毫秒 _GetProjectReferenceTargetFrameworkProperties   1 次调用
+        2 毫秒 FinalizeBuildStatus                        1 次调用
+        2 毫秒 GetCopyToOutputDirectoryItems              1 次调用
+        2 毫秒 _CleanGetCurrentAndPriorFileWrites         1 次调用
+        2 毫秒 FixupCLCompileOptions                      1 次调用
+        3 毫秒 CustomBuild                                1 次调用
+        4 毫秒 InitializeBuildStatus                      1 次调用
+        6 毫秒 PrepareForBuild                            1 次调用
+      658 毫秒 Link                                       1 次调用
+     7227 毫秒 ClCompile                                  1 次调用
+
+任务性能摘要:
+        0 毫秒 Message                                    3 次调用
+        0 毫秒 RemoveDuplicates                           2 次调用
+        0 毫秒 MSBuild                                    1 次调用
+        0 毫秒 SetRidAgnosticValueForProjects             1 次调用
+        0 毫秒 CheckVCToolsetVersion                      1 次调用
+        0 毫秒 FindUnderPath                              5 次调用
+        0 毫秒 ConvertToAbsolutePath                      1 次调用
+        0 毫秒 AssignCulture                              1 次调用
+        0 毫秒 Delete                                     2 次调用
+        1 毫秒 AssignTargetPath                           7 次调用
+        1 毫秒 MakeDir                                   10 次调用
+        1 毫秒 SetEnv                                    11 次调用
+        1 毫秒 CleanupStaleTlogItems                      1 次调用
+        1 毫秒 WriteLinesToFile                           1 次调用
+        1 毫秒 AssignProjectConfiguration                 1 次调用
+        1 毫秒 GenerateDesktopDeployRecipe                1 次调用
+        1 毫秒 ReadLinesFromFile                          2 次调用
+        2 毫秒 CallTarget                                 2 次调用
+        2 毫秒 GetOutOfDateItems                          3 次调用
+        3 毫秒 Touch                                      2 次调用
+        4 毫秒 VCMessage                                  1 次调用
+      656 毫秒 Link                                       1 次调用
+     7218 毫秒 CL                                         2 次调用
+
+已成功生成。
+
+                   “C:\Users\Administrator\Desktop\CN\Genshin.UnlockerIsland.API\Genshin.UnlockerIsland.API.vcxproj”(Build 目标) (1) ->
+                   (Link 目标) -> 
+                     LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+
+    1 个警告
+    0 个错误
+
+已用时间 00:00:07.93
