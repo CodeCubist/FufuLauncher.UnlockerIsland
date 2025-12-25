@@ -164,22 +164,27 @@ namespace GameHook
     
     __int64 HookChangeFOV(__int64 a1, float gameRequestedFov)
     {
+        if (!menu.enable_fov_override)
+        {
+            menu.fovSmoother.Reset(gameRequestedFov);
+            return g_original_HookChangeFOV(a1, gameRequestedFov);
+        }
+
         float targetFov = gameRequestedFov;
         bool isGameplayState = menu.isFocused && (!menu.isCursorVisible || menu.isAltPressed);
         
-        // FOV 修复逻辑: 
-        // 游戏过场动画、特定特写时，请求的 FOV 通常很小 (<= 31.0f)
-        // 此时我们不应该强制修改，否则会看到穿模或奇怪的画面
         bool isCutsceneOrSpecial = (gameRequestedFov <= 31.0f);
-
-        if (menu.enable_fov_override && isGameplayState && !isCutsceneOrSpecial)
+        
+        if (isCutsceneOrSpecial || !isGameplayState)
         {
-            targetFov = menu.fov_value;
+            menu.fovSmoother.Reset(gameRequestedFov);
+            return g_original_HookChangeFOV(a1, gameRequestedFov);
         }
         
-        // 应用平滑
-        float smoothedFov = menu.fovSmoother.Update(targetFov);
+        targetFov = menu.fov_value;
         
+        float smoothedFov = menu.fovSmoother.Update(targetFov);
+    
         return g_original_HookChangeFOV(a1, smoothedFov);
     }
 

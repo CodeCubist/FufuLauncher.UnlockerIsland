@@ -14,7 +14,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81168a12-0629-450d-985f-10fe9c4900e9" name="更改" comment="" />
+    <list default="true" id="81168a12-0629-450d-985f-10fe9c4900e9" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Genshin.Fps.UnlockerIsland/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Genshin.Fps.UnlockerIsland/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,26 +63,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET 项目.LauncherPro-1.0.0.executor": "Run",
-    ".NET 项目.LauncherPro.executor": "Run",
-    "C/C++ 项目.2.executor": "Debug",
-    "C/C++ 项目.ConsoleApplication2.executor": "Run",
-    "C/C++ 项目.ConsoleApplication3.executor": "Run",
-    "C/C++ 项目.Launcher.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET 项目.LauncherPro-1.0.0.executor&quot;: &quot;Run&quot;,
+    &quot;.NET 项目.LauncherPro.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 项目.2.executor&quot;: &quot;Debug&quot;,
+    &quot;C/C++ 项目.ConsoleApplication2.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 项目.ConsoleApplication3.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 项目.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C/C++ 项目.2">
     <configuration name="2" type="CppProject" factoryName="C++ Project" singleton="false">
       <configuration_1 setup="1">
@@ -338,7 +341,8 @@
       <workItem from="1766217855832" duration="3581000" />
       <workItem from="1766576295370" duration="8511000" />
       <workItem from="1766584871006" duration="6618000" />
-      <workItem from="1766595318251" duration="761000" />
+      <workItem from="1766595318251" duration="1526000" />
+      <workItem from="1766636994209" duration="344000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -356,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766596043840</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1">
+      <option name="closed" value="true" />
+      <created>1766596105499</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1766596105499</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,6 +376,17 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="1" />
