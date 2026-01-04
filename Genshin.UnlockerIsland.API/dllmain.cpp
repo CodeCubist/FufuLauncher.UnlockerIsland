@@ -42,7 +42,6 @@ namespace encrypted_strings {
     // GameUpdate: 游戏主循环
     constexpr auto pattern_GameUpdate = XorString::encrypt("E8 ? ? ? ? 48 8D 4C 24 ? 8B F8 FF 15 ? ? ? ? E8 ? ? ? ?");
     
-    // Get_FrameCount: 读取帧数 (关键防护点)
     // 对应 YSR 的 force_fps_code
     constexpr auto pattern_Get_FrameCount = XorString::encrypt("E8 ? ? ? ? 85 C0 7E 0E E8 ? ? ? ? 0F 57 C0 F3 0F 2A C0 EB 08 ?");
     
@@ -55,10 +54,8 @@ namespace encrypted_strings {
     // ChangeFOV: 修改视场角
     constexpr auto pattern_ChangeFOV = XorString::encrypt("40 53 48 83 EC 60 0F 29 74 24 ? 48 8B D9 0F 28 F1 E8 ? ? ? ? 48 85 C0 0F 84 ? ? ? ? E8 ? ? ? ? 48 8B C8 ");
     
-    // DisplayFog: 雾效/虚化相关
     constexpr auto pattern_DisplayFog = XorString::encrypt("0F B6 02 88 01 8B 42 04 89 41 04 F3 0F 10 52 ? F3 0F 10 4A ? F3 0F 10 42 ? 8B 42 08 ");
     
-    // Player_Perspective: 角色视角/虚化去除
     constexpr auto pattern_Player_Perspective = XorString::encrypt("E8 ? ? ? ? 48 8B BE ? ? ? ? 80 3D ? ? ? ? ? 0F 85 ? ? ? ? 80 BE ? ? ? ? ? 74 11");
 }
 
@@ -88,10 +85,6 @@ namespace GameHook
     typedef void* (*HookPlayer_Perspective_t)(void* RCX, float Display, void* R8);
     HookPlayer_Perspective_t g_original_Player_Perspective = nullptr;
     
-
-    // ==============================================================================
-    // 辅助函数
-    // ==============================================================================
     bool CheckCursorVisible()
     {
         CURSORINFO cursorInfo = { 0 };
@@ -112,7 +105,6 @@ namespace GameHook
         return foregroundProcessId == GetCurrentProcessId();
     }
     
-    // 每帧更新输入状态
     void UpdateInputStates()
     {
         if (!menu.gameWindow || !IsWindow(menu.gameWindow)) {
@@ -127,18 +119,31 @@ namespace GameHook
         menu.fovSmoother.SetSmoothing(menu.fov_smoothing_factor);
     }
     
+    void UpdateTitleWatermark()
+    {
+        if (!menu.gameWindow || !IsWindow(menu.gameWindow)) return;
+        
+        static ULONGLONG lastTick = 0;
+        ULONGLONG currentTick = GetTickCount64();
+        
+        if (currentTick - lastTick < 500) return; 
+        lastTick = currentTick;
+        
+        std::string title = "FufuLauncher";
 
+        SetWindowTextA(menu.gameWindow, title.c_str());
+    }
     __int64 HookGameUpdate(__int64 a1, const char* a2)
     {
         UpdateInputStates();
 
-        // 强制写入 FPS
+        UpdateTitleWatermark();
+        
         if (menu.enable_fps_override && g_original_Set_FrameCount)
         {
             g_original_Set_FrameCount(menu.selected_fps);
         }
-
-        // 强制关闭垂直同步
+        
         if (menu.enable_syncount_override && g_original_Set_SyncCount)
         {
             g_original_Set_SyncCount(false);
@@ -150,7 +155,6 @@ namespace GameHook
     int HookGet_FrameCount() {
         if (!g_original_HookGet_FrameCount) return 60;
         
-        // 游戏可能会检查 Get_FrameCount() > 60 ? Report() : Continue();
         if (menu.enable_fps_override) {
             return 60; 
         }
@@ -169,19 +173,18 @@ namespace GameHook
             menu.fovSmoother.Reset(gameRequestedFov);
             return g_original_HookChangeFOV(a1, gameRequestedFov);
         }
-
-        float targetFov = gameRequestedFov;
-        bool isGameplayState = menu.isFocused && (!menu.isCursorVisible || menu.isAltPressed);
+        
         
         bool isCutsceneOrSpecial = (gameRequestedFov <= 31.0f);
-        
-        if (isCutsceneOrSpecial || !isGameplayState)
+
+        if (isCutsceneOrSpecial)
         {
             menu.fovSmoother.Reset(gameRequestedFov);
             return g_original_HookChangeFOV(a1, gameRequestedFov);
         }
         
-        targetFov = menu.fov_value;
+        float targetFov = menu.fov_value;
+        
         
         float smoothedFov = menu.fovSmoother.Update(targetFov);
     
@@ -302,7 +305,6 @@ namespace GameHook
 
 DWORD WINAPI Run(LPVOID lpParam)
 {
-    // 初始化 MinHook
     if (MH_Initialize() != MH_OK) {
         MessageBoxA(NULL, "MinHook Initialize Failed", "Error", MB_ICONERROR);
         return FALSE;

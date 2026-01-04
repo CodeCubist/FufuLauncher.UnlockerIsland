@@ -13,6 +13,7 @@
 
 const wchar_t* MAPPING_NAME = L"4F3E8543-40F7-4808-82DC-21E48A6037A7";
 const wchar_t* TEMP_SUBDIR_NAME = L"NV_Cache_Temp"; 
+const wchar_t* PLUGINS_SUBDIR_NAME = L"Plugins"; 
 
 struct SimpleConfig {
     int HideQuestBanner;
@@ -131,6 +132,7 @@ bool ObfuscateFileHash(const std::wstring& filePath) {
     file.close();
     return true;
 }
+
 std::wstring PrepareSafeDll(const std::wstring& originalDllPath) {
     if (GetFileAttributesW(originalDllPath.c_str()) == INVALID_FILE_ATTRIBUTES) {
         WriteLog("错误: 源文件不存在 " + std::string(originalDllPath.begin(), originalDllPath.end()));
@@ -156,13 +158,11 @@ std::wstring PrepareSafeDll(const std::wstring& originalDllPath) {
     }
     
     if (!MoveFileExW(targetPath.c_str(), NULL, MOVEFILE_DELAY_UNTIL_REBOOT)) {
-
     }
 
     WriteLog("已生成安全副本: " + std::string(targetPath.begin(), targetPath.end()));
     return targetPath;
 }
-
 
 void InitOffsets(IslandEnvironment* env) {
     if (!env) return;
@@ -271,6 +271,68 @@ bool InjectDll(HANDLE hProcess, const std::wstring& dllPath) {
     return exitCode != 0;
 }
 
+void RecursiveScanAndInject(HANDLE hProcess, const std::wstring& directory, int& injectedCount) {
+    std::wstring searchPath = directory + L"\\*";
+    WIN32_FIND_DATAW findData;
+    HANDLE hFind = FindFirstFileW(searchPath.c_str(), &findData);
+
+    if (hFind == INVALID_HANDLE_VALUE) return;
+
+    do {
+        if (wcscmp(findData.cFileName, L".") == 0 || wcscmp(findData.cFileName, L"..") == 0)
+            continue;
+
+        std::wstring fullPath = directory + L"\\" + findData.cFileName;
+
+        if (findData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) {
+            RecursiveScanAndInject(hProcess, fullPath, injectedCount);
+        } else {
+            size_t nameLen = wcslen(findData.cFileName);
+            if (nameLen > 4) {
+                const wchar_t* ext = findData.cFileName + nameLen - 4;
+                if (_wcsicmp(ext, L".dll") == 0) {
+                    std::wstring wFileName = findData.cFileName;
+                    std::string sFileName(wFileName.begin(), wFileName.end());
+
+                    WriteLog("发现插件: " + sFileName + ", 直接注入(无需Temp)...");
+                    
+                    if (InjectDll(hProcess, fullPath)) {
+                        WriteLog("插件注入成功: " + sFileName);
+                        injectedCount++;
+                    } else {
+                        WriteLog("错误: 插件注入失败: " + sFileName);
+                    }
+                }
+            }
+        }
+
+    } while (FindNextFileW(hFind, &findData) != 0);
+
+    FindClose(hFind);
+}
+
+void InjectPlugins(HANDLE hProcess) {
+    wchar_t modulePath[MAX_PATH];
+    if (GetModuleFileNameW(nullptr, modulePath, MAX_PATH) == 0) return;
+    
+    std::wstring moduleDir = modulePath;
+    size_t lastSlash = moduleDir.find_last_of(L"\\/");
+    if (lastSlash == std::wstring::npos) return;
+    
+    std::wstring pluginsDir = moduleDir.substr(0, lastSlash) + L"\\" + PLUGINS_SUBDIR_NAME;
+
+    if (GetFileAttributesW(pluginsDir.c_str()) == INVALID_FILE_ATTRIBUTES) {
+        return;
+    }
+
+    WriteLog("正在递归扫描插件目录: " + std::string(pluginsDir.begin(), pluginsDir.end()));
+    
+    int totalInjected = 0;
+    RecursiveScanAndInject(hProcess, pluginsDir, totalInjected);
+
+    WriteLog("插件加载完成，共注入: " + std::to_string(totalInjected) + " 个插件");
+}
+
 extern "C" {
     
     LAUNCHER_API void UpdateConfig(const wchar_t* gamePath, int hideQuest, int disableDamage, int useTouch,
@@ -335,8 +397,7 @@ extern "C" {
                 WriteLog("警告: NvHelper 注入失败");
             }
         }
-
-        // 4. [核心] 安全处理与注入主DLL
+        
         if (dllPath && wcslen(dllPath) > 0) {
             WriteLog("准备安全DLL副本...");
             
@@ -347,7 +408,7 @@ extern "C" {
                 injectionSuccess = false;
                 if (errorMessage) wcsncpy_s(errorMessage, errorMessageSize, L"DLL处理失败", _TRUNCATE);
             } else {
-                WriteLog("注入安全副本: " + std::string(safeDllPath.begin(), safeDllPath.end())); // 日志仅调试用
+                WriteLog("注入安全副本: " + std::string(safeDllPath.begin(), safeDllPath.end())); 
                 if (!InjectDll(pi.hProcess, safeDllPath)) {
                     WriteLog("错误: DLL注入失败");
                     injectionSuccess = false;
@@ -358,7 +419,6 @@ extern "C" {
             }
         }
 
-        // 5. 注入 input_hot_switch.dll
         if (injectionSuccess) {
             std::wstring inputHotSwitchPath = GetInputHotSwitchDllPath();
             if (!inputHotSwitchPath.empty() && PathFileExistsW(inputHotSwitchPath.c_str())) {
@@ -374,6 +434,10 @@ extern "C" {
                     WriteLog("警告: InputHotSwitch DLL 安全处理失败");
                 }
             }
+        }
+        
+        if (injectionSuccess) {
+            InjectPlugins(pi.hProcess);
         }
         
         if (!injectionSuccess) {
@@ -397,7 +461,7 @@ extern "C" {
         wchar_t modulePath[MAX_PATH];
         GetModuleFileNameW(nullptr, modulePath, MAX_PATH);
         std::wstring path = modulePath;
-        path = path.substr(0, path.find_last_of(L"\\/")) + L"\\Genshin.UnlockerIsland.API.dll";
+        path = path.substr(0, path.find_last_of(L"\\/")) + L"\\nvhelper.dll";
         if (dllPath) wcsncpy_s(dllPath, dllPathSize, path.c_str(), _TRUNCATE);
         return 0;
     }

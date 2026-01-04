@@ -16,6 +16,25 @@
   <component name="ChangeListManager">
     <list default="true" id="81168a12-0629-450d-985f-10fe9c4900e9" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Genshin.Fps.UnlockerIsland/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Genshin.Fps.UnlockerIsland/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/dllmain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/dllmain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin..c7d40d76.tlog/CL.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin..c7d40d76.tlog/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin..c7d40d76.tlog/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin..c7d40d76.tlog/Cl.items.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin..c7d40d76.tlog/Genshin.UnlockerIsland.API.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin..c7d40d76.tlog/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin..c7d40d76.tlog/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin..c7d40d76.tlog/link.secondary.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin..c7d40d76.tlog/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin.Fps.UnlockerIsland.dll.recipe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin.Fps.UnlockerIsland.iobj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin.Fps.UnlockerIsland.ipdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/x64/Release/Genshin.UnlockerIsland.API.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Launcher/Launcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Launcher/Launcher.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Launcher/x64/Release/Launcher.iobj" beforeDir="false" afterPath="$PROJECT_DIR$/Launcher/x64/Release/Launcher.iobj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Launcher/x64/Release/Launcher.ipdb" beforeDir="false" afterPath="$PROJECT_DIR$/Launcher/x64/Release/Launcher.ipdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Release/Genshin.Fps.UnlockerIsland.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Release/Launcher.exp" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Release/Launcher.exp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,26 +48,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ConsoleApp1/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ConsoleApplication1/ConsoleApplication1.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ConsoleApplication1/MobileUIHook.h" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ConsoleApplication2/main.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Genshin.UnlockerIsland.API/GameState.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Genshin.UnlockerIsland.API/PipeServer.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Genshin.UnlockerIsland.API/PipeServer.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Administrator/Desktop/CN/Launcher/Launcher.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Administrator/Desktop/CN/Launcher/Launcher.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Launcher/Launcher.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LauncherPro-1.0.0/InverseBooleanConverter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LauncherPro-1.0.0/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LauncherPro-1.0.0/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LauncherPro/Converters/BooleanToVisibilityConverter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LauncherPro/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LauncherPro/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LauncherPro/Models/AppConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LauncherPro/Pages/HomePage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LauncherPro/Pages/SettingsPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LauncherPro/Services/CommandLineBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LauncherPro/Services/ConfigManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LauncherPro/Services/LauncherService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -343,6 +348,19 @@
       <workItem from="1766584871006" duration="6618000" />
       <workItem from="1766595318251" duration="1526000" />
       <workItem from="1766636994209" duration="344000" />
+      <workItem from="1766660685260" duration="451000" />
+      <workItem from="1766757408226" duration="270000" />
+      <workItem from="1767016826820" duration="417000" />
+      <workItem from="1767158473196" duration="4629000" />
+      <workItem from="1767194847325" duration="8377000" />
+      <workItem from="1767306615899" duration="1098000" />
+      <workItem from="1767431668658" duration="2233000" />
+      <workItem from="1767443388218" duration="46000" />
+      <workItem from="1767443440490" duration="18000" />
+      <workItem from="1767453659200" duration="38000" />
+      <workItem from="1767454895332" duration="6000" />
+      <workItem from="1767463017423" duration="527000" />
+      <workItem from="1767504670342" duration="1150000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -368,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766596105499</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1">
+      <option name="closed" value="true" />
+      <created>1766660877878</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1766660877878</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +407,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
