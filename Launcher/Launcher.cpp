@@ -7,11 +7,11 @@
 #include <sstream>
 #include <vector>
 #include "Launcher.h"
+#include "SecurityUtils.h" // 确保包含此头文件
 
 #pragma comment(lib, "shlwapi.lib")
 
 const wchar_t* PLUGINS_SUBDIR_NAME = L"Plugins"; 
-
 
 std::wstring GetLogFilePath() {
     wchar_t modulePath[MAX_PATH];
@@ -59,6 +59,7 @@ bool InjectDll(HANDLE hProcess, const std::wstring& dllPath) {
         return false;
     }
     
+    // 等待 LoadLibrary 返回 (DllMain 执行完毕)
     WaitForSingleObject(hThread, INFINITE);
     DWORD exitCode = 0;
     GetExitCodeThread(hThread, &exitCode);
@@ -145,7 +146,8 @@ extern "C" {
 
         std::wstring wGamePath = gamePath;
         std::wstring workingDir = wGamePath.substr(0, wGamePath.find_last_of(L"\\/"));
-        
+        std::wstring exeName = wGamePath.substr(wGamePath.find_last_of(L"\\/") + 1);
+
         std::wstring cmdArgs = commandLineArgs ? commandLineArgs : L"";
         wchar_t* pCmdLine = nullptr;
         if (!cmdArgs.empty()) {
@@ -163,7 +165,57 @@ extern "C" {
             return 3;
         }
         
+        HANDLE hMapFile = NULL; 
+        void* pSharedBuf = NULL;
+
+        WriteLog("正在构建校验...");
+        hMapFile = CreateFileMappingW(
+            INVALID_HANDLE_VALUE,
+            NULL,
+            PAGE_READWRITE,
+            0,
+            sizeof(AuthPacket),
+            SHARED_MEM_NAME
+        );
+
+        if (hMapFile == NULL) {
+            WriteLog("无法创建共享内存! 错误码: " + std::to_string(GetLastError()));
+        } else {
+            pSharedBuf = MapViewOfFile(hMapFile, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(AuthPacket));
+            
+            if (pSharedBuf == NULL) {
+                WriteLog("无法映射内存视图");
+                CloseHandle(hMapFile);
+                hMapFile = NULL;
+            } else {
+                AuthPacket packet = {};
+                packet.magic_header = 0xDEADBEEFCAFEBABE;
+                packet.salt = GetTickCount64() ^ 0x9988776655443322;
+                packet.target_pid = pi.dwProcessId;
+                
+                std::string sName(exeName.begin(), exeName.end());
+                strncpy_s(packet.process_name, sName.c_str(), sizeof(packet.process_name) - 1);
+                
+                packet.checksum = SecurityCrypto::CalcChecksum(&packet);
+                
+                SecurityCrypto::ProcessBuffer((uint8_t*)&packet.target_pid, ENCRYPTED_SIZE, packet.salt);
+                
+                CopyMemory(pSharedBuf, &packet, sizeof(AuthPacket));
+                
+
+                UnmapViewOfFile(pSharedBuf);
+            }
+        }
+
         InjectPlugins(pi.hProcess);
+        
+        if (hMapFile) {
+            WriteLog("正在等待 DLL 读取验证数据...");
+            Sleep(2000);
+            
+            CloseHandle(hMapFile);
+            WriteLog("共享内存句柄已关闭");
+        }
         
         ResumeThread(pi.hThread);
         CloseHandle(pi.hThread);
