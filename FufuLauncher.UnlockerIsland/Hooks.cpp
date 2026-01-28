@@ -15,6 +15,9 @@
 #include <ctime>
 #include <vector>
 #include <algorithm>
+#include <fstream> // [新增]
+#include <iomanip> // [新增]
+#include <sstream>
 
 #pragma comment(lib, "d3d11.lib")
 #pragma comment(lib, "MinHook/libMinHook.x64.lib")
@@ -49,6 +52,63 @@ public:
         return decrypted;
     }
 };
+
+const char* GetRegName(int index) {
+    static const char* regs[] = { "RAX", "RCX", "RDX", "RBX", "RSP", "RBP", "RSI", "RDI", "R8", "R9", "R10", "R11", "R12", "R13", "R14", "R15" };
+    if (index >= 0 && index < 16) return regs[index];
+    return "???";
+}
+
+// [新增] 简易指令分析，用于识别常见指令和寄存器
+std::string GetInstructionInfo(uint8_t* addr) {
+    if (!addr) return "";
+    std::stringstream ss;
+
+    // 读取前几个字节
+    uint8_t b0 = addr[0];
+    uint8_t b1 = addr[1];
+    uint8_t b2 = addr[2];
+
+    bool isRex = (b0 >= 0x40 && b0 <= 0x4F);
+    uint8_t rex = isRex ? b0 : 0;
+    uint8_t opcode = isRex ? b1 : b0;
+    uint8_t modrm = isRex ? b2 : b1;
+
+    // 解析 ModR/M 中的 Reg 字段 (Bits 3-5)
+    int regIndex = ((modrm >> 3) & 7);
+    if (rex & 4) regIndex += 8; // REX.R 扩展位
+
+    // 简单判断常见指令
+    if (opcode == 0xE8) {
+        ss << "CALL (Rel)";
+    }
+    else if (opcode == 0xE9) {
+        ss << "JMP (Rel)";
+    }
+    else if (opcode == 0x8B) {
+        ss << "MOV " << GetRegName(regIndex);
+    }
+    else if (opcode == 0x8D) {
+        ss << "LEA " << GetRegName(regIndex);
+    }
+    else if (opcode == 0x33) {
+        ss << "XOR " << GetRegName(regIndex);
+    }
+    else if (opcode == 0x89) {
+        ss << "MOV [Mem], " << GetRegName(regIndex); // 这里的 Reg 是源
+    }
+    else {
+        ss << "OP: " << std::hex << std::uppercase << (int)opcode;
+    }
+
+    // 补充打印前5个字节，方便人工确认
+    ss << " | Bytes: ";
+    for (int i = 0; i < 5; ++i) {
+        ss << std::hex << std::uppercase << std::setw(2) << std::setfill('0') << (int)addr[i] << " ";
+    }
+
+    return ss.str();
+}
 
 namespace EncryptedPatterns {
     // 1. GetFrameCount
@@ -160,6 +220,7 @@ namespace {
         if (addr) { \
             void* target = Scanner::ResolveRelative(addr, 1, 5); \
             if (target) { \
+                LogOffset(name, target, addr); /* 传入 target(结果) 和 addr(指令位置) */ \
                 std::cout << "   -> Found at: " << target << std::endl; \
                 if (MH_CreateHook(target, (void*)hookFn, (void**)&storeOrig) == MH_OK) \
                     std::cout << "   -> Hook Ready." << std::endl; \
@@ -174,6 +235,7 @@ namespace {
         std::string _dec_pat = XorString::decrypt(enc_pat); \
         void* addr = Scanner::ScanMainMod(_dec_pat); \
         if (addr) { \
+            LogOffset(name, addr, addr); /* 直接 Hook 地址，指令位置也是 addr */ \
             std::cout << "   -> Found at: " << addr << std::endl; \
             if (MH_CreateHook(addr, (void*)hookFn, (void**)&storeOrig) == MH_OK) \
                  std::cout << "   -> Hook Ready." << std::endl; \
@@ -188,7 +250,11 @@ namespace {
         void* addr = Scanner::ScanMainMod(_dec_pat); \
         if (addr) { \
             void* target = Scanner::ResolveRelative(addr, 1, 5); \
-            if (target) { storePtr.store(target); std::cout << "   -> Found." << std::endl; } \
+            if (target) { \
+                LogOffset(name, target, addr); /* 传入 target(结果) 和 addr(指令位置) */ \
+                storePtr.store(target); \
+                std::cout << "   -> Found." << std::endl; \
+            } \
         } else std::cout << "   -> [ERR] Not Found." << std::endl; \
     }
 
@@ -197,7 +263,11 @@ namespace {
         std::cout << "[SCAN] " << name << "..." << std::endl; \
         std::string _dec_pat = XorString::decrypt(enc_pat); \
         void* addr = Scanner::ScanMainMod(_dec_pat); \
-        if (addr) { storePtr.store(addr); std::cout << "   -> Found." << std::endl; } \
+        if (addr) { \
+            LogOffset(name, addr, addr); /* 直接地址 */ \
+            storePtr.store(addr); \
+            std::cout << "   -> Found." << std::endl; \
+        } \
         else std::cout << "   -> [ERR] Not Found." << std::endl; \
     }
 
@@ -450,6 +520,50 @@ HRESULT __stdcall hk_Present(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT
     return o_Present(pSwapChain, SyncInterval, Flags);
 }
 
+std::string GetOwnDllDir() {
+    char path[MAX_PATH];
+    HMODULE hm = NULL;
+    // 使用 Hooks::Init 的地址来获取当前模块句柄
+    if (GetModuleHandleExA(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS | GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT, (LPCSTR)Hooks::Init, &hm)) {
+        GetModuleFileNameA(hm, path, sizeof(path));
+        std::string fullPath = path;
+        size_t lastSlash = fullPath.find_last_of("\\/");
+        if (lastSlash != std::string::npos) {
+            return fullPath.substr(0, lastSlash);
+        }
+    }
+    return ".";
+}
+
+void LogOffset(const std::string& name, void* resultAddress, void* instructionAddress = nullptr) {
+    if (!Config::Get().dump_offsets || !resultAddress) return;
+
+    HMODULE hMod = NULL;
+    // 使用 resultAddress 获取模块基址
+    if (GetModuleHandleExA(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS | GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT, (LPCSTR)resultAddress, &hMod)) {
+        char modPath[MAX_PATH];
+        GetModuleFileNameA(hMod, modPath, sizeof(modPath));
+        std::string modName = modPath;
+        modName = modName.substr(modName.find_last_of("\\/") + 1);
+
+        uintptr_t base = (uintptr_t)hMod;
+        uintptr_t offset = (uintptr_t)resultAddress - base;
+
+        std::string extraInfo = "";
+        if (instructionAddress) {
+            extraInfo = "  -> [" + GetInstructionInfo((uint8_t*)instructionAddress) + "]";
+        }
+
+        std::string filePath = GetOwnDllDir() + "\\offsets.txt";
+        std::ofstream file(filePath, std::ios::app);
+        if (file.is_open()) {
+            file << std::left << std::setw(25) << name 
+                 << " = " << modName << "+" << std::hex << std::uppercase << "0x" << offset 
+                 << extraInfo << std::dec << std::endl;
+        }
+    }
+}
+
 bool InitDX11Hook() {
     WNDCLASSEXA wc = { sizeof(WNDCLASSEXA), CS_CLASSDC, DefWindowProcA, 0L, 0L, GetModuleHandle(NULL), NULL, NULL, NULL, NULL, "DX11Dummy", NULL };
     
@@ -673,6 +787,16 @@ __int64 hk_DisplayFog(__int64 a1, __int64 a2) {
 }
 
 bool Hooks::Init() {
+    // [新增] 如果开启了导出，先重置文件
+    if (Config::Get().dump_offsets) {
+        std::string filePath = GetOwnDllDir() + "\\offsets.txt";
+        std::ofstream file(filePath, std::ios::trunc);
+        if (file.is_open()) {
+            file << "Feature Offsets Dump" << std::endl;
+            file << "====================" << std::endl;
+            file << "Generated on module init." << std::endl << std::endl;
+        }
+    }
     if (MH_Initialize() != MH_OK) return false;
     HOOK_REL("GameUpdate", EncryptedPatterns::GameUpdate, hk_GameUpdate, o_GameUpdate);
     HOOK_REL("GetFrameCount", EncryptedPatterns::GetFrameCount, hk_GetFrameCount, o_GetFrameCount);

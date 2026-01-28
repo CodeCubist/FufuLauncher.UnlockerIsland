@@ -17,12 +17,9 @@
   <component name="ChangeListManager">
     <list default="true" id="81168a12-0629-450d-985f-10fe9c4900e9" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Genshin.Fps.UnlockerIsland/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Genshin.Fps.UnlockerIsland/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FufuLauncher.UnlockerIsland/Config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/FufuLauncher.UnlockerIsland/Config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FufuLauncher.UnlockerIsland/Config.h" beforeDir="false" afterPath="$PROJECT_DIR$/FufuLauncher.UnlockerIsland/Config.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FufuLauncher.UnlockerIsland/Hooks.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/FufuLauncher.UnlockerIsland/Hooks.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FufuLauncher.UnlockerIsland/Scanner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/FufuLauncher.UnlockerIsland/Scanner.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FufuLauncher.UnlockerIsland/Utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/FufuLauncher.UnlockerIsland/Utils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FufuLauncher.UnlockerIsland/dllmain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/FufuLauncher.UnlockerIsland/dllmain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/dllmain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Genshin.UnlockerIsland.API/dllmain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Launcher/Launcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Launcher/Launcher.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -414,7 +411,8 @@
       <workItem from="1769546052476" duration="2286000" />
       <workItem from="1769552496095" duration="2243000" />
       <workItem from="1769556552295" duration="15000" />
-      <workItem from="1769563455469" duration="1679000" />
+      <workItem from="1769563455469" duration="2343000" />
+      <workItem from="1769566075138" duration="3380000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -496,7 +494,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769526101953</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1">
+      <option name="closed" value="true" />
+      <created>1769565257006</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1769565257006</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

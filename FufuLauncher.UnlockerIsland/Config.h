@@ -58,6 +58,8 @@ struct ModConfig {
     bool show_time = false;
 
     bool enable_dx11_hook = true;
+
+    bool dump_offsets = false;
 };
 
 namespace Config {

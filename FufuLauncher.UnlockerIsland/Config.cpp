@@ -145,6 +145,8 @@ namespace Config {
         g_Config.show_time = ReadInt("ShowTime", 0, file);
 
         g_Config.enable_dx11_hook = ReadInt("EnableDX11Hook", 1, file);
+
+        g_Config.dump_offsets = ReadInt("DumpOffsets", 0, file);
     }
     void SaveOverlayPos(float x, float y) {
         g_Config.overlay_pos_x = x;
