@@ -899,13 +899,13 @@ bool CheckResistInBeyd() {
 
     std::string getTextStr = XorString::decrypt(EncryptedPatterns::GetText);
     std::string getComponentStr = XorString::decrypt(EncryptedPatterns::GetComponent);
-    uintptr_t getTextOffsetVal = 0;
-    uintptr_t getComponentOffsetVal = 0;
-    std::stringstream ss;
-    ss << std::hex << getTextStr;
-    ss >> getTextOffsetVal;
-    ss << std::hex << getComponentStr;
-    ss >> getComponentOffsetVal;
+    uintptr_t getTextOffsetVal = 0x15B61F60;
+    uintptr_t getComponentOffsetVal = 0x15C45190;
+    //std::stringstream ss;
+    //ss << std::hex << getTextStr;
+    //ss >> getTextOffsetVal;
+    //ss << std::hex << getComponentStr;
+    //ss >> getComponentOffsetVal;
 
     auto _GetText = (tGetText)(base + getTextOffsetVal);
     auto _GetComponent = (tGetComponent)(base + getComponentOffsetVal);
